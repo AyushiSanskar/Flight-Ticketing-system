@@ -10,6 +10,12 @@ app_license = "mit"
 
 # required_apps = []
 
+doc_events = {
+    "Airplane Ticket": {
+        "before_insert": set_random_seat
+    }
+}
+
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{

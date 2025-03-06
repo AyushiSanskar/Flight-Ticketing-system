@@ -1,9 +1,11 @@
 # Copyright (c) 2025, Ayushi Dhamecha and contributors
 # For license information, please see license.txt
 
-# import frappe
-from frappe.model.document import Document
 import frappe
+import random
+import string
+from frappe.model.document import Document
+
 
 class AirplaneTicket(Document):
     def validate(self):
@@ -34,3 +36,12 @@ class AirplaneTicket(Document):
     def before_submit(self):
         if self.status != "Boarded":
             frappe.throw("Cannot submit Airplane Ticket unless status is 'Boarded'.")
+
+
+    def set_random_seat(doc, method):
+        # Generate a random integer between 1 and 100
+        random_number = random.randint(1, 100)
+        # Choose a random letter between A and E
+        random_letter = random.choice('ABCDE')
+        # Combine to form the seat identifier
+        doc.seat = f"{random_number}{random_letter}"
