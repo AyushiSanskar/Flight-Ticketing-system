@@ -37,11 +37,3 @@ class AirplaneTicket(Document):
         if self.status != "Boarded":
             frappe.throw("Cannot submit Airplane Ticket unless status is 'Boarded'.")
 
-
-    def set_random_seat(doc, method):
-        # Generate a random integer between 1 and 100
-        random_number = random.randint(1, 100)
-        # Choose a random letter between A and E
-        random_letter = random.choice('ABCDE')
-        # Combine to form the seat identifier
-        doc.seat = f"{random_number}{random_letter}"

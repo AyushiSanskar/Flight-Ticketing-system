@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{flight}-{source_airport_code}-to-{destination_airport_code}",
+ "autoname": "format:{flight}-{source_airport_code}-to-{destination_airport_code}-{seat}",
  "creation": "2025-03-04 10:37:16.058580",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -170,7 +170,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-03-05 16:41:36.250103",
+ "modified": "2025-03-06 15:37:08.835199",
  "modified_by": "Administrator",
  "module": "Flight Ticketing System",
  "name": "Airplane Ticket",

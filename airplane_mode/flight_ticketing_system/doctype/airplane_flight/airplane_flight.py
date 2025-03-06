@@ -6,4 +6,8 @@ from frappe.model.document import Document
 
 
 class AirplaneFlight(Document):
-	pass
+	
+
+    def on_submit(self):
+        self.status = "Completed"
+        self.db_set("status", "Completed") 
