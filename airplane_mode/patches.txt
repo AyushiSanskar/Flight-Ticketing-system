@@ -5,4 +5,4 @@
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
 
-airplane_mode.patches.V1_0.populate_seats #126
+airplane_mode.patches.V1_0.populate_seats #127
