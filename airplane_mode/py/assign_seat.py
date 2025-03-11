@@ -6,7 +6,7 @@ import string
 def assign_seat(doc, method):
     seat_letters = 'ABCDEF'  # Seat columns
     seats_per_row = len(seat_letters)
-    max_rows = 30  # Total number of rows
+    max_rows = 50  # Total number of rows
 
     # Fetch existing tickets for the flight
     existing_tickets = frappe.get_all(
