@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "format:{airplane}-{MM}-{YY}-{####}",
  "creation": "2025-03-05 15:08:09.258363",
@@ -21,7 +22,12 @@
   "duration",
   "column_break_bpku",
   "time_of_departure",
+  "gate_no",
+  "section_break_yndj",
+  "crew_members",
   "section_break_fxgp",
+  "route",
+  "published",
   "amended_from"
  ],
  "fields": [
@@ -124,9 +130,38 @@
   {
    "fieldname": "column_break_bpku",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "section_break_yndj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crew_members",
+   "fieldtype": "Table",
+   "label": "Crew Members",
+   "options": "Flight Crew Member"
+  },
+  {
+   "fieldname": "gate_no",
+   "fieldtype": "Link",
+   "label": "gate No",
+   "options": "Gate Number"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "is_submittable": 1,
  "links": [
   {
@@ -134,7 +169,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2025-03-05 16:56:58.190080",
+ "modified": "2025-03-11 16:28:29.583697",
  "modified_by": "Administrator",
  "module": "Flight Ticketing System",
  "name": "Airplane Flight",
@@ -153,8 +188,51 @@
    "share": 1,
    "submit": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "travel Agent",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Airport Authority Personnel",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Flight Crew Member",
+   "share": 1
   }
  ],
+ "route": "flights",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
