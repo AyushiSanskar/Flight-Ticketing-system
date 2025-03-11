@@ -7,7 +7,8 @@
  "field_order": [
   "model",
   "airline",
-  "capacity"
+  "capacity",
+  "initial_audit_completed"
  ],
  "fields": [
   {
@@ -30,11 +31,17 @@
    "label": "Capacity",
    "non_negative": 1,
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "initial_audit_completed",
+   "fieldtype": "Check",
+   "label": " Initial Audit Completed"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-04 17:31:49.602031",
+ "modified": "2025-03-11 12:40:08.833435",
  "modified_by": "Administrator",
  "module": "Flight Ticketing System",
  "name": "Airplane",
@@ -51,6 +58,48 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "travel Agent",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Airport Authority Personnel",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Flight Crew Member",
+   "share": 1
   }
  ],
  "sort_field": "modified",

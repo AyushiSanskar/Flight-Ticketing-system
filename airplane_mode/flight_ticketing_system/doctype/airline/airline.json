@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:name1",
  "creation": "2025-03-03 12:31:15.245777",
@@ -9,7 +10,9 @@
   "name1",
   "founding_year",
   "customer_care_number",
-  "headquarters"
+  "column_break_cqsq",
+  "headquarters",
+  "website"
  ],
  "fields": [
   {
@@ -38,6 +41,16 @@
    "fieldtype": "Data",
    "label": "Headquarters",
    "reqd": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "column_break_cqsq",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -47,7 +60,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2025-03-04 16:40:23.896434",
+ "modified": "2025-03-11 10:34:58.119756",
  "modified_by": "Administrator",
  "module": "Flight Ticketing System",
  "name": "Airline",
@@ -65,6 +78,45 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Fleet manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "travel Agent",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Airport Authority Personnel",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Flight Crew Member",
+   "share": 1
   }
  ],
  "sort_field": "modified",
