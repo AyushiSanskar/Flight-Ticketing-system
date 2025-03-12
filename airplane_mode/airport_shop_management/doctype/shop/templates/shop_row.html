@@ -1,0 +1,42 @@
+<!-- <div>
+	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
+</div> -->
+<!-- this is a sample default list template -->
+<!-- <div class="shop-list-item">
+    <a href="{{ doc.route }}">
+		<div class="card">
+			<h5 class="card-header"><h1>{{ doc.shop_name }}</h1></h5>
+			<div class="card-body">
+			  <h5 class="card-title">Special title treatment</h5>
+			  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+			  <a href="#" class="btn btn-primary">I'm interested in this shop</a>
+			</div>
+		  </div>
+    </a>
+</div> -->
+
+<!-- <div class="card mb-3">
+    <img style="height: 30vh;" src="https://media.istockphoto.com/id/1806078258/photo/airport-grocery-shop-mockup-front-window-view.jpg?s=612x612&w=0&k=20&c=UZA_XVZqjWxDB1m5k4_SP0BhFfEPc9lNCZPqsdsL4MM=" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ doc.shop_name }}</h5>
+      <p class="card-text"><small class="text-muted">{{doc.airport}}</small></p>
+      <a href="#" class="btn btn-primary">View More</a>
+    </div>
+  </div> -->
+
+
+  <div class="card mb-3" style="max-width: 540px;">
+	<div class="row g-0">
+	  <!-- <div class="col-md-4">
+		<img src="https://media.istockphoto.com/id/1806078258/photo/airport-grocery-shop-mockup-front-window-view.jpg?s=612x612&w=0&k=20&c=UZA_XVZqjWxDB1m5k4_SP0BhFfEPc9lNCZPqsdsL4MM=" class="img-fluid rounded-start" alt="...">
+	  </div> -->
+	  <div class="col-md-8">
+		<div class="card-body">
+		  <h5 class="card-title">{{ doc.shop_name }}</h5>
+		  <p class="card-text"><small class="text-muted">{{doc.airport}}</small></p>
+		  <a href="{{doc.route}}" class="btn btn-primary">View More</a>
+		</div>
+	  </div>
+	</div>
+  </div>
+
