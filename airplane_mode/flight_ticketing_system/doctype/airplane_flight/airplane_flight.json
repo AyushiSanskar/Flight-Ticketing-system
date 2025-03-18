@@ -20,6 +20,7 @@
   "section_break_qqba",
   "date_of_departure",
   "duration",
+  "flight_price",
   "column_break_bpku",
   "time_of_departure",
   "gate_no",
@@ -157,6 +158,11 @@
    "fieldtype": "Link",
    "label": "gate No",
    "options": "Gate Number"
+  },
+  {
+   "fieldname": "flight_price",
+   "fieldtype": "Currency",
+   "label": "Flight Price"
   }
  ],
  "has_web_view": 1,
@@ -169,7 +175,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2025-03-11 16:28:29.583697",
+ "modified": "2025-03-18 12:34:02.154889",
  "modified_by": "Administrator",
  "module": "Flight Ticketing System",
  "name": "Airplane Flight",

@@ -6,8 +6,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "shop",
   "tenant",
+  "shop",
   "rent_amount",
   "column_break_vvoy",
   "start_date",
@@ -15,11 +15,11 @@
  ],
  "fields": [
   {
+   "fetch_from": "tenant.shop",
    "fieldname": "shop",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Shop",
-   "options": "Shop",
    "reqd": 1
   },
   {
@@ -53,7 +53,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-12 11:15:46.697874",
+ "modified": "2025-03-18 15:17:22.480457",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Lease Contract",

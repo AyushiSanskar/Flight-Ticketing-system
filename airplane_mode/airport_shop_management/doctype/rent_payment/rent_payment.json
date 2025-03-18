@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "RP-.###",
  "creation": "2025-03-12 11:39:34.268504",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,6 +9,7 @@
   "lease_contarnct",
   "shop",
   "tenant",
+  "month",
   "column_break_jatd",
   "payment_date",
   "amount_paid",
@@ -52,14 +54,21 @@
   {
    "fieldname": "column_break_jatd",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-12 11:58:18.196649",
+ "modified": "2025-03-17 11:38:08.563632",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Rent Payment",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

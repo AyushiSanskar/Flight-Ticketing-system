@@ -40,8 +40,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-03-11 16:17:27.561766",
+ "links": [
+  {
+   "link_doctype": "Shop",
+   "link_fieldname": "airport"
+  }
+ ],
+ "modified": "2025-03-12 12:47:00.209025",
  "modified_by": "Administrator",
  "module": "Flight Ticketing System",
  "name": "Airport",

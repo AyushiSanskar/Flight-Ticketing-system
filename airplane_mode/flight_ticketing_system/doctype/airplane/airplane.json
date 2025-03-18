@@ -41,10 +41,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-11 12:40:08.833435",
+ "modified": "2025-03-17 15:54:53.003041",
  "modified_by": "Administrator",
  "module": "Flight Ticketing System",
  "name": "Airplane",
+ "naming_rule": "By script",
  "owner": "Administrator",
  "permissions": [
   {

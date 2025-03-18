@@ -10,3 +10,18 @@ class AirplaneFlight(WebsiteGenerator):
     def on_submit(self):
         self.status = "Completed"
         self.db_set("status", "Completed") 
+        
+    # def on_update(self):
+    # # Check if the gate number has changed
+    #     if self.has_value_changed('gate_number'):
+    #         # Enqueue the background job to update tickets
+    #         frappe.enqueue('airplane_mode.py.update_gate_no.update_gate_number_in_tickets', flight_id=self.name, new_gate_number=self.gate_number)
+    
+#     # Fetch all Airplane Tickets linked to the current Airplane Flight
+#     tickets = frappe.get_all('Airplane Ticket', filters={'flight': doc.name}, fields=['name', 'gate_number'])
+
+# # Iterate over each ticket and update the gate number
+#     for ticket in tickets:
+#         ticket_doc = frappe.get_doc('Airplane Ticket', ticket['name'])
+#         ticket_doc.gate_number = doc.gate_number
+#         ticket_doc.save()

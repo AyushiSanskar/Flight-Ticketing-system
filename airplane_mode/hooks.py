@@ -149,9 +149,13 @@ app_license = "mit"
 
 doc_events = {
     "Airplane Ticket": {
-        "before_insert": "airplane_mode.py.assign_seat.assign_seat"
+        "before_insert": "airplane_mode.py.assign_seat.assign_seat",
+        # 'on_update': 'airplane_mode.py.update_gate_no.update_gate_number_in_tickets'
     }
 }
+
+fixtures = [{"dt": "Shop Type", "filters": [["name", "in", ["Stall", "Walk-through", "Normal"]]]}]
+
 
 # Scheduled Tasks
 # ---------------
