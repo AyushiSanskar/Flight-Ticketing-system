@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "tenant_name",
+  "shop",
   "email",
   "phone_number",
   "address"
@@ -34,11 +35,17 @@
    "fieldname": "address",
    "fieldtype": "Small Text",
    "label": "Address"
+  },
+  {
+   "fieldname": "shop",
+   "fieldtype": "Link",
+   "label": "Shop",
+   "options": "Shop"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-12 10:44:53.124139",
+ "modified": "2025-03-12 18:14:28.026729",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Tenant",

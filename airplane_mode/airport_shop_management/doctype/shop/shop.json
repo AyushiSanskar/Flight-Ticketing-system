@@ -13,6 +13,7 @@
   "column_break_szzj",
   "airport",
   "status",
+  "shop_type",
   "section_break_thzg",
   "route",
   "published"
@@ -66,13 +67,19 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "Published"
+  },
+  {
+   "fieldname": "shop_type",
+   "fieldtype": "Link",
+   "label": "Shop Type",
+   "options": "Shop Type"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-03-12 16:10:33.708750",
+ "modified": "2025-03-17 10:38:07.451750",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Shop",
