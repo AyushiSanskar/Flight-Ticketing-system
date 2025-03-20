@@ -1,0 +1,30 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+{% extends "templates/web.html" %}
+{% block page_content %}
+<!-- <h1>{{ title }}</h1> -->
+<h3 class="text-center">Flight Details</h3>
+<div class="border border-4 border-secondary p-6 m-5 rounded">
+    <div class="d-flex justify-content-between">
+        <div>{% set t1 = frappe.get_doc("Airplane", doc.airplane) %}
+            <p class="fs-3 fw-bold">Airline : {{t1.airline}}</p></div>
+        <div>
+            <div><p class="text-center fs-6 fw-bolder">{{ frappe.utils.format_duration(doc.duration)}}</p></div> 
+            <div><p class="fs-4">{{source_airport_code}} ----------> {{destination_airport_code}}</p></div>
+        </div>
+        <div><p class="fs-5">{{frappe.utils.format_date(doc.date_of_departure, "d MMMM, YYYY")}} </p></div>
+        <div>    <a href="http://192.168.2.137:8003/book-ticket-flight-web-form-/new?flight={{ doc.name | urlencode }}&flight_price={{ doc.flight_price | urlencode }}" class="btn btn-primary p-2 px-4 p-">Book Flight</a>
+        </div>
+    </div> 
+    <!-- <ul>
+        {% set t1 = frappe.get_doc("Airplane", doc.airplane) %}
+        <li>Airline : {{t1.airline}}</li>
+        <li>{{source_airport_code}} -> {{destination_airport_code}}</li>
+        <li>{{frappe.utils.format_date(doc.date_of_departure, "d MMMM, YYYY")}} | {{time_of_departure}}</li>
+        <li>Duration:{{ frappe.utils.format_duration(doc.duration)}} </li>
+    </ul> -->
+
+</div>  
+{% endblock %}
+
+<!-- this is a sample default web page template --> 

@@ -13,4 +13,4 @@ class Airplane(Document):
 		if doc.airline:
 			doc.name = make_autoname(f"{doc.airline}-.###")
 		else:
-			doc.name = make_autoname("AIRPLANE-.###")
+			doc.name = make_autoname("AIRPLANE-.###") 

@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-11 15:15:12.730150",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crew_member_name",
+  "role"
+ ],
+ "fields": [
+  {
+   "fieldname": "crew_member_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crew Member Name"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "\nPilot\nCo-Pilot\nFlight Attendant"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-03-11 15:34:13.219729",
+ "modified_by": "Administrator",
+ "module": "Flight Ticketing System",
+ "name": "Flight Crew Member",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
